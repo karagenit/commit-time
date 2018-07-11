@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
     s.homepage      = 'https://github.com/karagenit/commit-time'
     s.author        = 'Caleb Smith'
     s.email         = 'karagenit@outlook.com'
-    s.files         = [] #['lib/commit-time.rb']
+    s.files         = ['lib/commit-time.rb']
     s.require_paths = ['lib/', 'bin/']
     s.executables   << 'commit-time'
     s.platform      = Gem::Platform::RUBY
