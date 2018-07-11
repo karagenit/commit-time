@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'date'
+
+dates = %x(git log --pretty="%ad" --date=iso).split("\n").map { |date| DateTime.parse(date) }
+times = dates.each_cons(2).map { |a, b| ((a - b) * 24 * 60).round.to_i }
+
+times.each { |time| puts "#{time} Minutes" }
