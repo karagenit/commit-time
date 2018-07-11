@@ -1,0 +1,1 @@
+var search_data = {"index":{"searchIndex":["committime","new()"],"longSearchIndex":["committime","committime::new()"],"info":[["CommitTime","","CommitTime.html","",""],["new","CommitTime","CommitTime.html#method-c-new","(datetimes)",""]]}}
