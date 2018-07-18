@@ -7,6 +7,6 @@ dates = %x(git log --pretty="%ad" --date=iso).split("\n").map { |date| DateTime.
 
 times = CommitTime.new(dates)
 
-puts "Total: #{times.total_time} Minutes"
+puts "Total: #{(times.total_time / 60).round} Hours, #{times.total_time % 60} Minutes"
 puts "Average: #{times.average_time} Minutes"
 puts "Commits: #{times.commits}"
