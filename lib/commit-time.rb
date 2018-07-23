@@ -14,7 +14,12 @@ class CommitTime
     @commits = datetimes.count
 
     real_times = @times.find_all { |time| time < 60 }
-    @average_time = real_times.reduce(:+) / real_times.count
+    @average_time =
+      if real_times.empty?
+        0
+      else
+        real_times.reduce(:+) / real_times.count
+      end
     @total_time = @average_time * @commits
   end
 end
