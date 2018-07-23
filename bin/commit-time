@@ -3,7 +3,10 @@
 require 'date'
 require 'commit-time'
 
-dates = %x(git log --pretty="%ad" --date=iso).split("\n").map { |date| DateTime.parse(date) }
+author = ARGV[0].to_s
+
+dates = %x(git log --pretty="%ad" --date=iso --author="#{author}")
+dates = dates.split("\n").map { |date| DateTime.parse(date) }
 
 times = CommitTime.new(dates)
 
