@@ -16,7 +16,6 @@ task :clean do
 end
 
 task :test do
-    sh "./test/test-commit-time.rb"
     sh "rubocop lib/commit-time.rb"
 end
 
