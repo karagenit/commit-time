@@ -18,7 +18,7 @@ class CommitTime
       if real_times.empty?
         0
       else
-        real_times.reduce(:+) / real_times.count
+        real_times.reduce(:+).to_f / real_times.count
       end
     @total_time = @average_time * @commits
   end

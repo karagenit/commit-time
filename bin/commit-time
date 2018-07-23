@@ -10,6 +10,6 @@ dates = dates.split("\n").map { |date| DateTime.parse(date) }
 
 times = CommitTime.new(dates)
 
-puts "Total: #{(times.total_time / 60).round} Hours, #{times.total_time % 60} Minutes"
-puts "Average: #{times.average_time} Minutes"
+puts "Total: #{(times.total_time / 60).floor} Hours, #{(times.total_time % 60).round} Minutes"
+puts "Average: #{times.average_time.round} Minutes"
 puts "Commits: #{times.commits}"
