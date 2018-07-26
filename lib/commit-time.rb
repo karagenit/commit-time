@@ -10,7 +10,7 @@ class CommitTime
 
   def initialize(datetimes)
     @datetimes = datetimes
-    @times = datetimes.each_cons(2).map { |a, b| ((a - b) * 24 * 60).round.to_i }
+    @times = datetimes.each_cons(2).map { |a, b| ((a - b).abs * 24 * 60).round.to_i }
     @commits = datetimes.count
 
     real_times = @times.find_all { |time| time < 60 }
