@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.1.0](https://github.com/karagenit/commit-time/tree/v1.1.0) (2018-07-29)
+[Full Changelog](https://github.com/karagenit/commit-time/compare/v1.0.0...v1.1.0)
+
+**Closed issues:**
+
+- Publish as Gem [\#3](https://github.com/karagenit/commit-time/issues/3)
+
 ## [v1.0.0](https://github.com/karagenit/commit-time/tree/v1.0.0) (2018-07-28)
 **Closed issues:**
 
