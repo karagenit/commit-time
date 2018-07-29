@@ -22,4 +22,12 @@ class CommitTime
       end
     @total_time = @average_time * @commits
   end
+
+  def marshal_dump
+    [@datetimes, @times, @commits, @average_time, @total_time]
+  end
+
+  def marshal_load array
+    @datetimes, @times, @commits, @average_time, @total_time = array
+  end
 end
