@@ -72,6 +72,10 @@
     
     <li ><a href="#method-c-new">::new</a>
     
+    <li ><a href="#method-i-marshal_dump">#marshal_dump</a>
+    
+    <li ><a href="#method-i-marshal_load">#marshal_load</a>
+    
   </ul>
 </div>
 
@@ -212,6 +216,80 @@
       <span class="ruby-identifier">real_times</span>.<span class="ruby-identifier">reduce</span>(<span class="ruby-value">:+</span>).<span class="ruby-identifier">to_f</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">real_times</span>.<span class="ruby-identifier">count</span>
     <span class="ruby-keyword">end</span>
   <span class="ruby-ivar">@total_time</span> = <span class="ruby-ivar">@average_time</span> <span class="ruby-operator">*</span> <span class="ruby-ivar">@commits</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-marshal_dump" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">marshal_dump</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="marshal_dump-source">
+            <pre><span class="ruby-comment"># File lib/commit-time.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">marshal_dump</span>
+  [<span class="ruby-ivar">@datetimes</span>, <span class="ruby-ivar">@times</span>, <span class="ruby-ivar">@commits</span>, <span class="ruby-ivar">@average_time</span>, <span class="ruby-ivar">@total_time</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-marshal_load" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">marshal_load</span><span
+            class="method-args">(array)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="marshal_load-source">
+            <pre><span class="ruby-comment"># File lib/commit-time.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">marshal_load</span> <span class="ruby-identifier">array</span>
+  <span class="ruby-ivar">@datetimes</span>, <span class="ruby-ivar">@times</span>, <span class="ruby-ivar">@commits</span>, <span class="ruby-ivar">@average_time</span>, <span class="ruby-ivar">@total_time</span> = <span class="ruby-identifier">array</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           
