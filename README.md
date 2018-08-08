@@ -1,3 +1,8 @@
+<p align="center">
+  <img width="500" height="123,683 " src="https://user-images.githubusercontent.com/40801473/43850734-a35cb044-9b30-11e8-85b8-b6181fddc8da.png">
+</p>
+
+
 # commit-time
 Calculating Approximate Time Spent on Git/Github Repos
 
